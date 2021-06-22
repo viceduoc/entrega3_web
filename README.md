@@ -1,3 +1,6 @@
-# entrega3_web
-<h2> PROJECT --> PROGRA_WEB <h2>
-<h3> APP --> ENTREGA3 <h3>
+# ENTREGA 3
+
+Estructura del proyecto:
+
+- El proyecto se llama PROGRA_WEB
+- La APP es ENTREGA3
