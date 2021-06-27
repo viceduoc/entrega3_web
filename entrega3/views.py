@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Noticia
 
 # Create your views here.
@@ -18,3 +18,8 @@ def noticias(request):
     }
     return render(request, 'entrega3/noticias.html', datos)
 
+def eliminarNoticia(request, id):
+    noticia = Noticia.objects.get(idNoticia=id)
+    noticia.delete()
+
+    return redirect(to="noticias")  

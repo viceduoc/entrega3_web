@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.urls import path
-from .views import home, formulario, noticias
+from .views import home, formulario, noticias, eliminarNoticia
 
 
 
@@ -8,5 +8,6 @@ from .views import home, formulario, noticias
 urlpatterns = [
     path('', home, name="home"),
     path('formulario', formulario, name="formulario"),
-    path('noticias', noticias, name='noticias')
+    path('noticias', noticias, name='noticias'),
+    path('eliminar-noticia/<id>', eliminarNoticia, name="eliminar-noticia")
 ]
