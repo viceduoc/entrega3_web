@@ -24,7 +24,7 @@
     <!--VALIDACION MODAL-->
     <script src="./assets/js/validacion_modal.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/darkmode.css">
+    <link rel="stylesheet" href="{% static 'entrega3/css/darkmode.css' %}">
 
     <!--JS API TIEMPO-->
     <script src="./assets/js/apiTiempo.js"></script>
@@ -138,7 +138,7 @@
     <!--ÚNETE-->
     <section class="text-center mb-5">
       <h1 class="text-center my-5 text-uppercase">Únete a esta gran  comunidad</h1>
-      <a href="./contacto.html"> <button type="button"class="btn btn-success btn-lg">Quiero participar!</button> </a>
+      <a href="{% url 'formulario' %}"> <button type="button"class="btn btn-success btn-lg">Quiero participar!</button> </a>
     </section>
 
 
@@ -171,7 +171,7 @@
                 </form>
               </div>   
                 <div class="modal-footer text-center">
-                  <a href="./contacto.html">Registrarme</a>
+                  <a href="{% url 'formulario' %}">Registrarme</a>
                 </div>
                 </div>
             </div>
@@ -193,7 +193,7 @@
       <h5  class="py-3 mt-5">COMUNIDAD DE ESTUDIANTES</h5>
     </footer>
   <!--JS API NOTICIAS-->
-      <script src="./assets/js/consultanoticiasus.js"></script>
-      <script src="./assets/js/darkmode.js"></script>
+      <script src="{% static 'entrega3/js/consultanoticiasus.js' %}"></script>
+      <script src="{% static 'entrega3/js/darkmode.js' %}"></script>
 </body>
 </html>
